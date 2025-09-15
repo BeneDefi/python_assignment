@@ -21,5 +21,3 @@ class Array:
     def __str__(self):
         return str(self.data)
 
-    def __repr__(self):
-        return f"Array({self.data})"
