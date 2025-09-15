@@ -5,15 +5,6 @@ class Array:
     def append(self, item):
         self.data += [item]
 
-    def pop(self, index=-1):
-        if not self.data:
-            raise IndexError("pop from empty array")
-        if index < -len(self.data) or index >= len(self.data):
-            raise IndexError("pop index out of range")
-        item = self.data[index]
-        self.data = self.data[:index] + self.data[index+1:]
-        return item
-
     def remove(self, item):
         for i in range(len(self.data)):
             if self.data[i] == item:

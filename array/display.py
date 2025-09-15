@@ -8,8 +8,5 @@ print(a)
 
 a.remove(15)
 print(a) 
-
-popped = a.pop()
-print(popped)  
-print(a)      
+ 
 
